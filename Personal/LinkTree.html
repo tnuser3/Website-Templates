@@ -8,11 +8,35 @@
 <div id="Header">
   
   <div id="Buttons">
-    
+    <button onclick="OpenWindow('LINKHERE')" class="Button">button1</button> 
+    <button onclick="OpenWindow('LINKHERE')" class="Button">button2</button> 
+    <button onclick="OpenWindow('LINKHERE')" class="Button">button3</button> 
+    <button onclick="OpenWindow('LINKHERE')" class="Button">button4</button> 
   </div>
 </div>
     <script>
-  
+      function OpenWindow(Link)
+      {
+        window.open(Link)
+      }
     </script>
+    <style>
+
+button{
+        padding: 10px 24px;
+        border-radius: 8px;
+        margin-right: 50%;
+        margin-left: 45%;
+        margin: center;
+      }
+    #Buttons {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    </style>
 </body>
 </html>
