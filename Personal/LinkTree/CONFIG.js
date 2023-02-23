@@ -10,14 +10,15 @@ function OnStart(){
     var Button3Name = "BUTTON3 NAME HERE";
     var Button4Name = "BUTTON4 NAME HERE";
     //-----------Button Links----------\\
-    var Button1Link = "BUTTON1 LINK HERE";
-    var Button2Link = "BUTTON2 LINK HERE";
-    var Button3Link = "BUTTON3 LINK HERE";
-    var Button4Link = "BUTTON4 LINK HERE";
+    var Button1Link = "";
+    var Button2Link = "";
+    var Button3Link = "";
+    var Button4Link = "";
     //-----------Footer----------\\
     var Copyright = "© Copyright [Year], [Copmany], [Rights]";
     //If you care about this you can scroll down
     var doc = document;
+
     doc.getElementById("Button1").value=Button1Name;
     doc.getElementById("Button2").value=Button2Name;
     doc.getElementById("Button3").value=Button3Name;
@@ -30,4 +31,8 @@ function OnStart(){
  function OpenWindow(Link)
  {
    window.open(Link)
+   if (Button1Link=="")
+   {
+
+   }
  }
