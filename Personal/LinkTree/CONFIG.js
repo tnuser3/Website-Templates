@@ -1,7 +1,6 @@
 window.onload = function() {
     OnStart();
    };
-function OnStart(){ 
     //-----------Header Things----------\\
     var ProfilePicture = "Pfp Link";
     //-----------Button Names----------\\
@@ -16,23 +15,36 @@ function OnStart(){
     var Button4Link = "";
     //-----------Footer----------\\
     var Copyright = "© Copyright [Year], [Copmany], [Rights]";
+    //----------------------------↓↓↓ The Boring Stuff ↓↓↓--------------------------------\\
     //If you care about this you can scroll down
     var doc = document;
 
+function OnStart(){ 
     doc.getElementById("Button1").value=Button1Name;
     doc.getElementById("Button2").value=Button2Name;
     doc.getElementById("Button3").value=Button3Name;
     doc.getElementById("Button4").value=Button4Name;
-    document.getElementById("Button1").addEventListener("click", OpenWindow);
-    document.getElementById("Button2").addEventListener("click", OpenWindow);
-    document.getElementById("Button3").addEventListener("click", OpenWindow);
-    document.getElementById("Button4").addEventListener("click", OpenWindow);
+    document.getElementById("Button1").addEventListener("click", ButtonOpen1);
+    document.getElementById("Button2").addEventListener("click", ButtonOpen2);
+    document.getElementById("Button3").addEventListener("click", ButtonOpen3);
+    document.getElementById("Button4").addEventListener("click", ButtonOpen4);
+    doc.getElementById("IMG").src = ProfilePicture;
+    doc.getElementById("H!").innerHTML=Copyright;
  }
- function OpenWindow(Link)
+ function ButtonOpen1(Link)
  {
-   window.open(Link)
-   if (Button1Link=="")
-   {
-
-   }
+   window.open(Button1Link)
  }
+ function ButtonOpen2()
+ {
+   window.open(Button2Link)
+ }
+ function ButtonOpen3(Link)
+ {
+   window.open(Button3Link)
+ }
+ function ButtonOpen4()
+ {
+   window.open(Button4Link)
+ }
+ 
