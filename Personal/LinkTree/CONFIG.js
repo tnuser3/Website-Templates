@@ -31,7 +31,7 @@ function OnStart(){
     doc.getElementById("IMG").src = ProfilePicture;
     doc.getElementById("H!").innerHTML=Copyright;
  }
- function ButtonOpen1(Link)
+ function ButtonOpen1()
  {
    window.open(Button1Link)
  }
@@ -39,7 +39,7 @@ function OnStart(){
  {
    window.open(Button2Link)
  }
- function ButtonOpen3(Link)
+ function ButtonOpen3()
  {
    window.open(Button3Link)
  }
