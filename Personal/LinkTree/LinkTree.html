@@ -8,26 +8,24 @@
 <div id="Header">
   <img id="IMG" src="https://raw.githubusercontent.com/tnuser3/Website-Templates/78d003f309cc114c48ec13cf63756ea83dabe694/Default_pfp.svg%20(1).png"> 
   <div id="Buttons">
-    <button onclick="OpenWindow('LINKHERE')" class="Button">button1</button> 
-    <button onclick="OpenWindow('LINKHERE')" class="Button">button2</button> 
-    <button onclick="OpenWindow('LINKHERE')" class="Button">button3</button> 
-    <button onclick="OpenWindow('LINKHERE')" class="Button">button4</button>
+    <input type="button" value="Button1" class="Buttons" id="Button1"></input>
+    <input type="button" value="Button2" class="Buttons" id="Button2"></input>
+    <input type="button" value="Button3" class="Buttons" id="Button3"></input>
+    <input type="button" value="Button4" class="Buttons" id="Button4"></input>
   </div>
 </div>
 <div id="Footer">
   <div id="contaner">
-<h1>
-© Copyright [Year], [Copmany], [Rights]
+<h1 value="© Copyright [Year], [Copmany], [Rights]">
+
 </h1>
   </div>
 
 </div>
-    <script>
-      function OpenWindow(Link)
-      {
-        window.open(Link)
-      }
+    <script src="CONFIG.js">//yes you have to keep this
+
     </script>
+
     <style>
 
       
@@ -54,7 +52,7 @@ background-color: rgb(40,40,40);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   }
-  button{
+  .Buttons{
     color: white;
   padding: 20px 200px;
   border-radius: 8px;
@@ -66,7 +64,7 @@ background-color: rgb(40,40,40);
     border: none;
     transition-duration: 0.5s;
   }
-button:hover{
+.Buttons:hover{
   background-color: white;
   color: black;
   
