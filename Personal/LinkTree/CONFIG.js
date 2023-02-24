@@ -16,6 +16,13 @@ window.onload = function() {
     var Button4Link = "";
     //-----------Footer----------\\
     var Copyright = "© Copyright [Year], [Copmany], [Rights]";
+    //------------Button Config------------\\
+    var ButtonColor = "Black";//MAKE SURE THE FIRST LETTER IS CAPITLE
+    var ButtonHoverColor = "White";
+    var ButtonTextColor = "White";
+    var ButtonHoverText = "Black";
+    //FILE LOCATION\\ //where this file is located
+    var ConfigLocation ="Config.js";
     //----------------------------↓↓↓ The Boring Stuff ↓↓↓--------------------------------\\
     //If you care about this you can scroll down
     var doc = document;
@@ -26,16 +33,27 @@ function OnStart(){
     doc.getElementById("Button2").value=Button2Name;
     doc.getElementById("Button3").value=Button3Name;
     doc.getElementById("Button4").value=Button4Name;
-    //-----------------------Button Click Listener---------------------\\
-    document.getElementById("Button1").addEventListener("click", ButtonOpen1);
-    document.getElementById("Button2").addEventListener("click", ButtonOpen2);
-    document.getElementById("Button3").addEventListener("click", ButtonOpen3);
-    document.getElementById("Button4").addEventListener("click", ButtonOpen4);
     //-----------------------HEADER--------------------------------------\\
     doc.getElementById("IMG").src = ProfilePicture;
     doc.getElementById("UserName").innerHTML = UserName;
     //-------------------Footer-------------------------------------------\\
     doc.getElementById("H2").innerHTML=Copyright;
+    //-----------------------Button Click Listener---------------------\\
+    document.getElementById("Button1").addEventListener("click", ButtonOpen1);
+    document.getElementById("Button2").addEventListener("click", ButtonOpen2);
+    document.getElementById("Button3").addEventListener("click", ButtonOpen3);
+    document.getElementById("Button4").addEventListener("click", ButtonOpen4);
+    //-----------------------Button Colors----------------------------------\\
+    //-------------------Background------------\\
+    document.getElementById("Button1").style.backgroundColor = ButtonColor;
+    document.getElementById("Button2").style.backgroundColor = ButtonColor;
+    document.getElementById("Button3").style.backgroundColor = ButtonColor;
+    document.getElementById("Button4").style.backgroundColor = ButtonColor;
+    //-----------------text-------------------------/\\   
+    document.getElementById("Button1").style.color = ButtonTextColor;
+    document.getElementById("Button2").style.color = ButtonTextColor;
+    document.getElementById("Button3").style.color = ButtonTextColor;
+    document.getElementById("Button4").style.color = ButtonTextColor;
  }
  function ButtonOpen1()
  {
@@ -52,5 +70,8 @@ function OnStart(){
  function ButtonOpen4()
  {
    window.open(Button4Link)
+ }
+ function ButtonColorManager(){
+
  }
  
