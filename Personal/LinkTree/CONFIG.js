@@ -3,13 +3,14 @@ window.onload = function() {
    };
     //-----------Header Things----------\\
     var ProfilePicture = "Pfp Link";
+    var UserName = "UserName";//username here
     //-----------Button Names----------\\
-    var Button1Name = "BUTTON1 NAME HERE";
-    var Button2Name = "BUTTON2 NAME HERE";
-    var Button3Name = "BUTTON3 NAME HERE";
-    var Button4Name = "BUTTON4 NAME HERE";
+    var Button1Name = "button1";//Put Your button names here
+    var Button2Name = "Button2";
+    var Button3Name = "Button3";
+    var Button4Name = "Button4";
     //-----------Button Links----------\\
-    var Button1Link = "";
+    var Button1Link = "";//put button links here
     var Button2Link = "";
     var Button3Link = "";
     var Button4Link = "";
@@ -20,16 +21,21 @@ window.onload = function() {
     var doc = document;
 
 function OnStart(){ 
+    //------------------button names----------\\
     doc.getElementById("Button1").value=Button1Name;
     doc.getElementById("Button2").value=Button2Name;
     doc.getElementById("Button3").value=Button3Name;
     doc.getElementById("Button4").value=Button4Name;
+    //-----------------------Button Click Listener---------------------\\
     document.getElementById("Button1").addEventListener("click", ButtonOpen1);
     document.getElementById("Button2").addEventListener("click", ButtonOpen2);
     document.getElementById("Button3").addEventListener("click", ButtonOpen3);
     document.getElementById("Button4").addEventListener("click", ButtonOpen4);
+    //-----------------------HEADER--------------------------------------\\
     doc.getElementById("IMG").src = ProfilePicture;
-    doc.getElementById("H!").innerHTML=Copyright;
+    doc.getElementById("UserName").innerHTML = UserName;
+    //-------------------Footer-------------------------------------------\\
+    doc.getElementById("H2").innerHTML=Copyright;
  }
  function ButtonOpen1()
  {
